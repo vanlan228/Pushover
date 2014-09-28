@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <oye translate="label" module="oye_pushover">
+            <label>Oye</label>
+            <sort_order>100</sort_order>
+        </oye>
+    </tabs>
+    <sections>
+        <oye_pushover translate="label" module="oye_pushover">
+            <label>Push Notifications</label>
+            <tab>oye</tab>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <oye_group translate="label" module="oye_pushover">
+                    <label>PushOver configuration</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <oye_token translate="label">
+                            <label>API Token key : </label>
+                            <comment>Displayed on your app page : https://pushover.net/apps/</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </oye_token>
+                        <oye_userkey translate="label">
+                            <label>User key : </label>
+                            <comment>Displayed on your dashboard : https://pushover.net/</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </oye_userkey>
+                        <oye_events translate="label">
+                            <label>Please Select Events : </label>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>oye_pushover/system_config_source_events</source_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </oye_events>
+                        <oye_notifications translate="label">
+                            <label>Please Select Notifications : </label>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>oye_pushover/system_config_source_notifications</source_model>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </oye_notifications>
+                        <oye_qty translate="label">
+                            <label>Orders bigger then X : </label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </oye_qty>
+                    </fields>
+                </oye_group>
+            </groups>
+        </oye_pushover>
+    </sections>
+</config>
